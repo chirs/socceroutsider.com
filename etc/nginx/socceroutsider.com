@@ -10,7 +10,7 @@ server {
 server {
 
             listen   80;
-            server_name socceroutsider.com
+            server_name socceroutsider.com;
 
             location / {
                         root   /home/chris/www/socceroutsider.com/src/;
