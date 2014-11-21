@@ -1,0 +1,20 @@
+
+
+server {
+            listen   80;
+            server_name  data.soccerstats.us
+            rewrite ^/(.*) http://dev.soccerstats.us/$1 permanent;
+           }
+
+
+server {
+
+            listen   80;
+            server_name dev.soccerstats.us
+
+            location / {
+                        root   /home/chris/www/soccerstats.us/src/;
+                        index  index.html;
+                        }
+
+}
